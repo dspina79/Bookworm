@@ -7,6 +7,14 @@
         <attribute name="personalName" optional="YES" attributeType="String"/>
         <attribute name="species" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="genre" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="review" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
@@ -15,8 +23,9 @@
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="Animal" positionX="-54" positionY="9" width="128" height="118"/>
+        <element name="Book" positionX="-36" positionY="54" width="128" height="133"/>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
         <element name="Student" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="Animal" positionX="-54" positionY="9" width="128" height="118"/>
     </elements>
 </model>

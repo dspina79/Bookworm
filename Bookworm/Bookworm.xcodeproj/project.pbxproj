@@ -17,6 +17,8 @@
 		5508C5E9259EB2B8006DDC12 /* EnvironmentUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5E8259EB2B8006DDC12 /* EnvironmentUsage.swift */; };
 		5508C5EC259EB78D006DDC12 /* CoreDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5EB259EB78D006DDC12 /* CoreDataExample.swift */; };
 		5508C5EF259FF896006DDC12 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5EE259FF896006DDC12 /* AnimalView.swift */; };
+		5508C5F225A006A8006DDC12 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5F125A006A8006DDC12 /* AddBookView.swift */; };
+		557965C825A015400003CD72 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557965C725A015400003CD72 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5508C5E8259EB2B8006DDC12 /* EnvironmentUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentUsage.swift; sourceTree = "<group>"; };
 		5508C5EB259EB78D006DDC12 /* CoreDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExample.swift; sourceTree = "<group>"; };
 		5508C5EE259FF896006DDC12 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
+		5508C5F125A006A8006DDC12 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		557965C725A015400003CD72 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				5508C5E8259EB2B8006DDC12 /* EnvironmentUsage.swift */,
 				5508C5EB259EB78D006DDC12 /* CoreDataExample.swift */,
 				5508C5EE259FF896006DDC12 /* AnimalView.swift */,
+				5508C5F125A006A8006DDC12 /* AddBookView.swift */,
+				557965C725A015400003CD72 /* RatingView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -157,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5508C5EF259FF896006DDC12 /* AnimalView.swift in Sources */,
+				5508C5F225A006A8006DDC12 /* AddBookView.swift in Sources */,
 				5508C5DA259E2EAD006DDC12 /* Persistence.swift in Sources */,
+				557965C825A015400003CD72 /* RatingView.swift in Sources */,
 				5508C5EC259EB78D006DDC12 /* CoreDataExample.swift in Sources */,
 				5508C5E9259EB2B8006DDC12 /* EnvironmentUsage.swift in Sources */,
 				5508C5DD259E2EAD006DDC12 /* Bookworm.xcdatamodeld in Sources */,
