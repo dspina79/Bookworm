@@ -16,6 +16,7 @@
 		5508C5E6259E2F17006DDC12 /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5E5259E2F17006DDC12 /* BindingExample.swift */; };
 		5508C5E9259EB2B8006DDC12 /* EnvironmentUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5E8259EB2B8006DDC12 /* EnvironmentUsage.swift */; };
 		5508C5EC259EB78D006DDC12 /* CoreDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5EB259EB78D006DDC12 /* CoreDataExample.swift */; };
+		5508C5EF259FF896006DDC12 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508C5EE259FF896006DDC12 /* AnimalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5508C5E5259E2F17006DDC12 /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
 		5508C5E8259EB2B8006DDC12 /* EnvironmentUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentUsage.swift; sourceTree = "<group>"; };
 		5508C5EB259EB78D006DDC12 /* CoreDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExample.swift; sourceTree = "<group>"; };
+		5508C5EE259FF896006DDC12 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				5508C5E5259E2F17006DDC12 /* BindingExample.swift */,
 				5508C5E8259EB2B8006DDC12 /* EnvironmentUsage.swift */,
 				5508C5EB259EB78D006DDC12 /* CoreDataExample.swift */,
+				5508C5EE259FF896006DDC12 /* AnimalView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5508C5EF259FF896006DDC12 /* AnimalView.swift in Sources */,
 				5508C5DA259E2EAD006DDC12 /* Persistence.swift in Sources */,
 				5508C5EC259EB78D006DDC12 /* CoreDataExample.swift in Sources */,
 				5508C5E9259EB2B8006DDC12 /* EnvironmentUsage.swift in Sources */,
