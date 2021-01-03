@@ -9,6 +9,10 @@ import SwiftUI
 import CoreData
 
 struct DetailView: View {
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.presentationMode) var presentationMode
+    @State private var showDeleteConfirmation: Bool = false
+    
     let book: Book
     var body: some View {
         GeometryReader { geo in
@@ -37,6 +41,23 @@ struct DetailView: View {
             }
         }
         .navigationBarTitle(Text(book.title ?? "Unknown Book"), displayMode: .inline)
+        .navigationBarItems(trailing: Button(action: {
+            self.showDeleteConfirmation = true
+        }) {
+            Image(systemName: "trash")
+        })
+        .alert(isPresented: $showDeleteConfirmation) {
+            Alert(title: Text("Delete?"), message: Text("Are you sure you want to delete \(book.title ?? "Unknown")?"), primaryButton: .destructive(Text("Delete")) {
+                deleteBook()
+            }, secondaryButton: .cancel())
+        }
+    }
+    
+    func deleteBook() {
+        self.moc.delete(book)
+        try? self.moc.save()
+        
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
