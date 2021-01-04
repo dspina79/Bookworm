@@ -45,6 +45,7 @@ struct AddBookView: View {
                         newBook.review = self.review
                         newBook.rating = Int16(self.rating)
                         newBook.genre = self.genre
+                        newBook.dateRated = Date()
                         
                         try? moc.save()
                         self.presentationMode.wrappedValue.dismiss()

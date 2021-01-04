@@ -14,13 +14,31 @@ struct DetailView: View {
     @State private var showDeleteConfirmation: Bool = false
     
     let book: Book
+    var bookGenre: String {
+        var genre = book.genre ?? "Other"
+        if genre.isEmpty {
+            genre = "Other"
+        }
+        return genre
+    }
+    
+    var dateRated: String {
+        guard let dt = book.dateRated else {
+            return "Unknown Date"
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter.string(from: dt)
+    }
+    
     var body: some View {
         GeometryReader { geo in
             VStack {
                 ZStack {
-                    Image(self.book.genre ?? "Fantasy")
+                    Image(bookGenre)
                         .frame(maxWidth: geo.size.width)
-                    Text(self.book.genre?.uppercased() ?? "FANTASY")
+                    Text(bookGenre)
                         .font(.caption)
                         .fontWeight(.black)
                         .padding(8)
@@ -38,6 +56,9 @@ struct DetailView: View {
                 
                 RatingView(rating: .constant(Int(book.rating)))
                     .font(.largeTitle)
+                
+                Text("Date Rated: \(self.dateRated)")
+                    .font(.caption)
             }
         }
         .navigationBarTitle(Text(book.title ?? "Unknown Book"), displayMode: .inline)
